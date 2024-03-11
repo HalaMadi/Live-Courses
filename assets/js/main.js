@@ -26,3 +26,18 @@
 //     }
 // });
 
+function toggleDetail(detailId) {
+    var detailElement = document.getElementById(detailId);
+    if (detailElement.classList.contains("show")) {
+      detailElement.classList.remove("show");
+    } else {
+      // Optional: Hide all other details
+      var allDetails = document.querySelectorAll(".collapse.show");
+      allDetails.forEach(function (detail) {
+        detail.classList.remove("show");
+      });
+
+      // Show the selected detail
+      detailElement.classList.add("show");
+    }
+  }

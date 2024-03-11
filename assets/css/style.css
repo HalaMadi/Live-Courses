@@ -14,9 +14,10 @@
   flex-wrap: wrap;
 }
 .vertical-line {
-  border-left: 1px solid #070707;
-  height: 30px;
-  margin: 0 10px;
+  border-left: 1px solid black; 
+  height: 12px; 
+  display: inline-block;
+  margin: 0 2px; 
 }
 .startHeader p {
   font-size: 20px;
@@ -32,6 +33,36 @@
 .navbar .nav-link {
   color: #000;
 }
+
+.information{
+  margin: 30px;
+}
+.exam_informations_left{
+  width: 30%;
+}
+.exam_informations_right{
+  display: flex;
+}
+.circle-wrap {
+  display: grid;
+  grid-template-columns: repeat(1, 160px);
+  grid-gap: 80px;
+  margin-top: 100px;
+  margin-left: 50px;
+  width: 150px;
+  height: 150px;
+  background: #d9d7da;
+  border-radius: 50%;
+}
+.sortBy button{
+border: 1px solid #424242;
+}
+.sortBy label{
+  display: block;
+  margin: 5px 80px;
+width: 100px;
+}
+
 .cameraScreen_buttons {
   display: flex;
   flex-direction: row;

@@ -1,0 +1,6 @@
+ <svg width="106" height="106" viewBox="-13.25 -13.25 132.5 132.5" version="1.1" xmlns="http://www.w3.org/2000/svg" style="transform:rotate(-90deg)">
+    <circle r="43" cx="53" cy="53" fill="transparent" stroke="#f8f7f7" stroke-width="16" stroke-dasharray="270.04px" stroke-dashoffset="0"></circle>
+    <circle r="43" cx="53" cy="53" stroke="#6fa749" stroke-width="13" stroke-linecap="round" stroke-dashoffset="54px" fill="transparent" stroke-dasharray="270.04px"></circle>
+    <text x="36px" y="64px" fill="#040c08" font-size="33px" font-weight="bold" style="transform:rotate(90deg) translate(0px, -102px)">80</text>
+  </svg>
+    

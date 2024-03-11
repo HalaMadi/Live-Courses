@@ -3,56 +3,84 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 .headerContent,
-.startHeader,
-.endHeader {
+.startHeader,.startHeader {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
+.endHeader {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 .vertical-line {
   border-left: 1px solid black; 
   height: 12px; 
   display: inline-block;
-  margin: 0 2px; 
+  margin: 0 12px; 
 }
 .startHeader p {
+  margin-bottom: 8px;
   font-size: 20px;
   font-weight: 800px;
 }
 .startHeader .live_procting {
   color: rgb(197, 197, 48);
+  margin-bottom: 8px;
+
 }
 .navbar {
   background-color: #ddba46;
   border-radius: 10px;
+  gap: 20px;
 }
 .navbar .nav-link {
+  padding-right: 30px;
   color: #000;
 }
 
-.information{
-  margin: 30px;
-}
-.exam_informations_left{
-  width: 30%;
-}
-.exam_informations_right{
+
+.exam_informations {
   display: flex;
+  justify-content: space-between;
+  align-items: center; 
 }
-.circle-wrap {
-  display: grid;
-  grid-template-columns: repeat(1, 160px);
-  grid-gap: 80px;
-  margin-top: 100px;
-  margin-left: 50px;
-  width: 150px;
-  height: 150px;
-  background: #d9d7da;
+.exam_informations_right .wrapper{
+  display: flex;
+  flex-direction: row;
+  padding:10px 30px;
+  gap: 18px;
+}
+
+.circular-bar{
+  width: 120px;
+  height: 120px;
+  background: conic-gradient(#4285f4 2.5deg, #e8f0f7 110deg);
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.circular-bar::before{
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #e8f0f7;
+  border-radius: 50%;
+}
+.percent{
+  z-index: 10;
+  font-size: 20px;
+}
+
+label{
+  font-size: 20px;
 }
 .sortBy button{
 border: 1px solid #424242;
@@ -67,7 +95,6 @@ width: 100px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex-wrap: wrap;
   margin-top: 5px;
 }
 .cameraScreen_buttons .button1 button {
